@@ -1,11 +1,11 @@
 cask "pulse" do
-  version "0.0.3"
+  version "0.0.4"
 
   if Hardware::CPU.arm?
-    sha256 "557b19788251d16e2ac0acd24504abbe22962a91a5aee39f8a45807451861b6c"
+    sha256 "c7814fb2934a6813322979a44550052780eb7ffbb018a5903f8ad27696b794ee"
     url "https://github.com/ultrasev/pulse/releases/download/v#{version}/Pulse_#{version}_aarch64.dmg"
   else
-    sha256 "db8ecdfc08072e74aeb7c3e2d4e39fb8ad131436baeec99ba0b63a3c316afdf5"
+    sha256 "26115a7fb2684389222830df04015a9fbb1b46877ca396577b5a16da84422c6e"
     url "https://github.com/ultrasev/pulse/releases/download/v#{version}/Pulse_#{version}_x64.dmg"
   end
 
